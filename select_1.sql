@@ -5,7 +5,7 @@ SELECT name, duration
 
 SELECT name, duration
   FROM tracks
- WHERE duration < 210;
+ WHERE duration >= 210;
 
 SELECT name, year
   FROM compilations
@@ -17,4 +17,12 @@ SELECT name
 
 SELECT name
   FROM tracks
- WHERE name LIKE '%my%';
+ WHERE name ILIKE 'my %'
+    OR name ILIKE '% my'
+    OR name ILIKE '% my'
+    OR name ILIKE '% my %'
+    OR name ILIKE 'my';
+
+SELECT name
+  FROM tracks
+ WHERE string_to_array(lower(name), ' ') && array['my'];

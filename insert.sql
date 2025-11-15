@@ -36,6 +36,17 @@ VALUES
 INSERT INTO tracks (name, duration, album_id)
 VALUES 
 ('my_track_1', 360, 4),
+('my own', 360, 3),
+('own my', 360, 3),
+('my', 360, 1),
+('oh my god', 360, 1),
+('myself', 360, 2),
+('by myself', 360, 2),
+('bemy self', 360, 2),
+('myself by', 360, 3),
+('by myself by', 360, 3),
+('beemy', 360, 1),
+('premyne', 360, 4),
 ('track_2', 250, 3),
 ('track_3', 770, 4),
 ('track_4', 999, 2),
